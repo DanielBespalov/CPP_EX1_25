@@ -1,4 +1,8 @@
 #pragma once
+/**
+ * danieldaniel2468@gmail.com
+ */
+
 namespace graph {
 
 class Graph {

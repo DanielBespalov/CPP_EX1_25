@@ -1,9 +1,12 @@
 #pragma once
+/**
+ * danieldaniel2468@gmail.com
+ */
+
 #include "graph.h"
 
 namespace graph {
 
-// ==== Queue ====
 class Queue {
 private:
     int* data;
@@ -16,7 +19,6 @@ public:
     bool isEmpty() const;
 };
 
-// ==== PriorityQueue ====
 class PriorityQueue {
 private:
     int* data;
@@ -32,7 +34,6 @@ public:
     bool isEmpty() const;
 };
 
-// ==== UnionFind ====
 class UnionFind {
 private:
     int* parent;
@@ -45,7 +46,6 @@ public:
     void unite(int x, int y);
 };
 
-// ==== Algorithms ====
 class Algorithms {
 public:
     static Graph bfs(const Graph& g, int start);
@@ -55,4 +55,4 @@ public:
     static Graph kruskal(const Graph& g);
 };
 
-} // namespace graph
+} 

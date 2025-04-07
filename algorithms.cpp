@@ -1,10 +1,13 @@
+/**
+ * danieldaniel2468@gmail.com
+ */
+
 #include "algorithms.h"
 #include <climits>
 #include <stdexcept>
 
 namespace graph {
 
-// ===== Queue =====
 Queue::Queue(int cap) : front(0), rear(0), size(0), capacity(cap) {
     data = new int[capacity];
 }
@@ -24,7 +27,6 @@ int Queue::dequeue() {
 }
 bool Queue::isEmpty() const { return size == 0; }
 
-// ===== PriorityQueue =====
 PriorityQueue::PriorityQueue(int cap) : size(0), capacity(cap) {
     data = new int[capacity];
     priority = new int[capacity];
@@ -74,7 +76,6 @@ bool PriorityQueue::isEmpty() const {
     return true;
 }
 
-// ===== UnionFind =====
 UnionFind::UnionFind(int n) : size(n) {
     parent = new int[n];
     rank = new int[n];
@@ -221,7 +222,6 @@ Graph Algorithms::bfs(const Graph& g, int start) {
     return tree;
 }
 
-// ===== DFS =====
 void dfsUtil(const Graph& g, int u, bool* visited, Graph& tree) {
     visited[u] = true;
     int* neighbors = nullptr;

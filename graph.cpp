@@ -1,3 +1,7 @@
+/**
+ * danieldaniel2468@gmail.com
+ */
+
 #include "graph.h"
 #include <iostream>
 #include <stdexcept>
