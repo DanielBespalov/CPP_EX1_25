@@ -6,6 +6,7 @@ all: Main
 
 Main: main.cpp $(OBJS)
 	$(CXX) $(CXXFLAGS) -o Main main.cpp $(OBJS)
+	./Main
 
 test: test.cpp $(OBJS)
 	$(CXX) $(CXXFLAGS) -o test test.cpp $(OBJS)
